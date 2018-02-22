@@ -17,10 +17,7 @@ class TestController extends \yii\web\Controller {
     }
     
     public function actionTest2($name=null,$lname=null) {
-        $name = "duke";
-        $lname = "lomkong";
-        $fullname =  "ชื่อปัจจุบันของคุณคือ $name $lname"; 
-        return $this->render('test2',['fullname' => $fullname]);
+         return $this->render('test2',['name' => $name,'lname'=> $lname]);
     }
     
 
